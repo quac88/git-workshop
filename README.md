@@ -10,7 +10,7 @@ Create a workshop for ACC CS Club members to become masters of git and github.
 - [angular style commits](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit).
 
 # CONTRIBUTING
-See [contributing.md](docs/contributing.md)
+See [contributing.md](docs/contributing.md) and [commits.md](docs/commits.md)
 
 # ROADMAP
 - [] Create guide for getting started with git
