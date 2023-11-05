@@ -1,2 +1,3 @@
 # git-workship
-This is the repository for the ACC CS Club git workshop
+GIT workshop for ACC CS Club 2023
+
