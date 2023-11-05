@@ -15,6 +15,9 @@ GIT workshop for ACC CS Club 2023
   - [] Merging
   - [] Pull Requests
   - [] Code Reviews
+  - [] Issue Tracking
+  - [] Project Management
+  - [] Symantic Versioning/commits
   - [] Setting Permissions/Security
 - [] Create artificial conflict scenerios
     - [] Merge conflicts
