@@ -9,6 +9,9 @@ Create a workshop for ACC CS Club members to become masters of git and github.
 - [semantic-release](https://github.com/semantic-release/semantic-release)
 - [angular style commits](https://github.com/angular/angular/blob/68a6a07/CONTRIBUTING.md#commit).
 
+# CONTRIBUTING
+See [contributing.md](docs/contributing.md)
+
 # ROADMAP
 - [] Create guide for getting started with git
   - [] Create a github account
