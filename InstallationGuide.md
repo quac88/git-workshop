@@ -32,16 +32,11 @@ https://github.com/
 
 Steps:
 
-1. Create a directory (folder) on your computer, where you would like all your project files to be.
-
- Command line: 
+1. Create a directory (folder) on your computer, where you would like all your project files to be. In Command line: 
     mkdir [name of folder] 
 
  Example: 
-
-    ```
     mkdir project1
-    ```
 
 2. Initialize Git by typing: 
 
@@ -55,11 +50,13 @@ Steps:
 ...
 
 3. Change branch name from *master to main (more about branching later): 
+
     ```
     git branch -m main
     ```
     
  Check branch name, you should see "main" as the branch name: 
+
     ``` 
     git branch 
     ```
@@ -68,11 +65,16 @@ Steps:
 https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/ 
 
 4. Create a .gitignore and add it: 
-    touch .gitignore
+
+    ``` 
+    touch .gitignore 
+    ``` 
 
  You need to create this file to tell Git not to track some files you don't want to track, for security reasons. 
  Inside the file, pick 1 method: 
+
  i. List what you want to ignore: 
+
  For example, you want to ignore these files: a.exe, .git, .htaccess; open the .gitignore file, then write: 
     a.exe
     .git
