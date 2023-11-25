@@ -33,10 +33,14 @@ https://github.com/
 Steps:
 
 1. Create a directory (folder) on your computer, where you would like all your project files to be. In Command line: 
+    ```
     mkdir [name of folder] 
+    ```
 
  Example: 
-    mkdir project1
+    ```
+    mkdir project1 
+    ```
 
 2. Initialize Git by typing: 
 
@@ -56,7 +60,6 @@ Steps:
     ```
     
  Check branch name, you should see "main" as the branch name: 
-
     ``` 
     git branch 
     ```
@@ -76,6 +79,7 @@ https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-m
  i. List what you want to ignore: 
 
  For example, you want to ignore these files: a.exe, .git, .htaccess; open the .gitignore file, then write: 
+    # ignore everything by typing out files names 
     a.exe
     .git
     .htaccess 
