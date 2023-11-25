@@ -120,3 +120,16 @@ https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-m
     ``` 
 
  Commit locks in the changes you made. Please please KNOW BEST PRACTICES for committing changes. You should commit small, often, and smart. You should write detailed/reasonable comments, please remember that your teammates and even you may want to go back and understand what you did as well. 
+
+ You can double check by entering: 
+
+ ```
+ git status
+ ```
+
+Congratulations! You have set up your local repository :D 
+
+
+**** HOW TO PULL REMOTE REPOSITORY (GITHUB) TO YOUR LOCAL REPOSITORY (DIRECTORY IN YOUR PC) **** 
+
+1. 
