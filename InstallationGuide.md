@@ -22,13 +22,42 @@ GitHub is a code repository. There are other code repositories such as Bitbucket
 Ok, now create a GitHub account: 
 https://github.com/ 
 
+**** CREATE A GITHUB REPOSITORY ***
+Github repository is a remote repository, this is for when you want to start a project. 
+1. Click on the "+"/"Create new..." sign on the top right corner
+
+2. Click on "New repository"
+
+3. Choose public or private 
+
+4. You can choose to add a README file and add .gitignore file, but we'll show you how to create them later from your Command Prompt. IMPORTANT: if you have created a README.md and/or .gitignore files in your local repostory already, you shouldn't create another ones from clicking these buttons. 
+
+5. Click "Create repository". You have created a remote repository. 
+ Note the SSH key tab, you'll need to copy that later (click on the tab, and copy link)
+
+6. Now, you will see a screen that says "Quick setup - if you've done this kind of thing before ... "
+ IF YOU HAVE NEVER HAD GITHUB BEFORE: you will need to set up a SSH key to connect Github to push/pull from your local repository, you'll only need to do this once per Github account. 
+ SKIP this step if you have done this or you know what you're doing.
+
+ To set up GitHub push with SSH keys, OPEN A DIFFERENT BROWSER TAB, then please follow these instructions, and SKIP step 1 because we just created a repository, and STOP after you have tested the SSH key (DO NOT do 'git remote ...'): 
+ https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278 
+
+ Notes: 
+ Use your email
+ You skip the file name step by accepting the default by pressing enter
+ You can skip at the passphrase stepp by pressing enter twice 
+ When you do the test key step, you can ignore the warning, and choose yes 
+ If the test works, you'll see: "Hi <username>" message
+
+7. To push your local repository, please see step 5 below, ART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE
+
 # 4. Read the Best Practices Guide 
 <link> 
 
 # 5. Getting Started and Basic Commands
 (You must have Git installed before you can follow these steps.) 
 
-**** HOW TO SET UP A LOCAL REPOSITORY (LAPTOP/PC) ****
+**** PART I: HOW TO SET UP A LOCAL REPOSITORY (LAPTOP/PC) ****
 
 Steps:
 
@@ -127,9 +156,18 @@ https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-m
  git status
  ```
 
+ or: 
+
+ ```
+ git ls-files
+ ```
+
+Same process if you would like to create a README.md file or any files. 
 Congratulations! You have set up your local repository :D 
 
 
-**** HOW TO PULL REMOTE REPOSITORY (GITHUB) TO YOUR LOCAL REPOSITORY (DIRECTORY IN YOUR PC) **** 
+**** PART II: HOW TO PULL REMOTE REPOSITORY (GITHUB) TO YOUR LOCAL REPOSITORY (DIRECTORY IN YOUR PC) **** 
 
 1. 
+
+**** PART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE ****
