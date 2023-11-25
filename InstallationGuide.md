@@ -33,7 +33,7 @@ Github repository is a remote repository, this is for when you want to start a p
 4. You can choose to add a README file and add .gitignore file, but we'll show you how to create them later from your Command Prompt. IMPORTANT: if you have created a README.md and/or .gitignore files in your local repostory already, you shouldn't create another ones from clicking these buttons. 
 
 5. Click "Create repository". You have created a remote repository. 
- Note the SSH key tab, you'll need to copy that later (click on the tab, and copy link)
+ Note the SSH key tab, you'll need to copy that later to add your remote repository to your local repository (click on the tab, and copy link)
 
 6. Now, you will see a screen that says "Quick setup - if you've done this kind of thing before ... "
  IF YOU HAVE NEVER HAD GITHUB BEFORE: you will need to set up a SSH key to connect Github to push/pull from your local repository, you'll only need to do this once per Github account. 
@@ -43,13 +43,14 @@ Github repository is a remote repository, this is for when you want to start a p
  https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278 
 
  Notes: 
+ Use the Command Prompt
  Use your email
  You skip the file name step by accepting the default by pressing enter
  You can skip at the passphrase stepp by pressing enter twice 
  When you do the test key step, you can ignore the warning, and choose yes 
  If the test works, you'll see: "Hi <username>" message
 
-7. To push your local repository, please see step 5 below, ART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE
+7. To push your local repository to remote repository, please see step 5 below, PART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE
 
 # 4. Read the Best Practices Guide 
 <link> 
@@ -168,6 +169,67 @@ Congratulations! You have set up your local repository :D
 
 **** PART II: HOW TO PULL REMOTE REPOSITORY (GITHUB) TO YOUR LOCAL REPOSITORY (DIRECTORY IN YOUR PC) **** 
 
-1. 
+ In your local repository, to add the remote repository to your local repository, enter: 
 
-**** PART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE ****
+    ``` 
+    git remote add origin [your SSH key from your "Quick setup - ...", which is the Github repository page]
+    ``` 
+
+ Example: 
+    ```
+    git remote add origin git@github.com:ak-iqmulus/test.git
+    ``` 
+ 
+ Now you can pull it to your local directory/repository: 
+    ```
+    git pull origin main 
+    ```
+
+**** PART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE **** 
+ BEFORE YOU PUSH, please check your branch name first, make sure you push to the correct branch. 
+
+    ``` 
+    git branch 
+    ``` 
+
+ Change *master branch name to main if necessary. 
+
+    ```
+    git branch -M main 
+    ``` 
+ 
+ Now you can push your files to the main branch:
+ 
+    ```
+    git push -u origin main 
+    ``` 
+
+ This means you push your committed work from 'origin', which is your local repository, to the main branch of the remote repository. You know it works when you see your added/updated work/files on your Github repository. 
+
+ HOWEVER, it is best practice to create your own branch to push to, then, when your team is happy with your work, you merge it with the development branch, then finally, you can merge it with the main branch (please see Best Practices Guide) 
+
+ To create a branch, following the angular-style format: 
+
+    ```
+    your-name/type-of-commit/few-words-about-what-you-did 
+    ``` 
+ 
+ Example: 
+    
+    ```
+    git checkout -b quac/docs/installation-guide 
+    ``` 
+
+ To check branches, you can even see which branch you're at: 
+    
+    ```
+    git branch 
+    ``` 
+
+ To change to a different branch, for example, you want to go to the development branch: 
+    
+    ```
+    git checkout development 
+    ``` 
+
+ For more information: https://github.com/quac88/NitDestroyer/blob/main/docs/contributing.md 
