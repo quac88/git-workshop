@@ -28,7 +28,7 @@ https://github.com/
 # 5. Getting Started and Basic Commands
 (You must have Git installed before you can follow these steps.) 
 
-**** HOW TO PULL FROM REMOTE DIRECTORY (GITHUB) TO YOUR LOCAL REPOSITORY (LAPTOP/PC) ****
+**** HOW TO SET UP A LOCAL REPOSITORY (LAPTOP/PC) ****
 
 Steps:
 
@@ -67,16 +67,16 @@ Steps:
  Why change branch to main? Because... read this article if you're curious
 https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/ 
 
-4. Create a .gitignore and add it: 
+4. Create a .gitignore: 
 
     ``` 
     touch .gitignore 
     ``` 
 
- You need to create this file to tell Git not to track some files you don't want to track, for security reasons. 
+ You need to create this file to tell Git not to track some files you don't want to track, for security reasons. This step is very important, because if you accidentally forget to ignore a file and let it in a repository, it's there forever. 
  Inside the file, pick 1 method: 
 
- i. List what you want to ignore: 
+ i. List what you want to ignore and add it: 
 
  For example, you want to ignore these files: a.exe, .git, .htaccess; open the .gitignore file, then write: 
     # ignore everything by typing out files names 
@@ -93,3 +93,30 @@ https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-m
     !.gitignore
     !*.cpp
     !*.h
+
+5. Add a file before committing
+ You need to 'git add' files to your version control before you can commit them. We can add the .gitignore file we just created: 
+
+    ```
+    git add .gitignore
+    ```
+
+ You can add multiple files, such as: 
+
+    ```
+    git add .gitignore main.cpp function.cpp 
+    ``` 
+
+6. Check file status: 
+
+    ``` 
+    git status 
+    ``` 
+
+7. Commit files: 
+
+    ```
+    git commit -m "comment" 
+    ``` 
+
+ Commit locks in the changes you made. Please please KNOW BEST PRACTICES for committing changes. You should commit small, often, and smart. You should write detailed/reasonable comments, please remember that your teammates and even you may want to go back and understand what you did as well. 
