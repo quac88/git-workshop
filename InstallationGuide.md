@@ -27,3 +27,64 @@ https://github.com/
 <link> 
 
 # 5. Getting Started and Basic Commands
+You must have Git installed before you can follow these steps. 
+
+** How to pull from remote directory (Github) to your local repository (laptop/PC) **
+
+Steps:
+
+a. Create a directory (folder) on your computer, where you would like all your project files to be.
+    Command line: 
+        mkdir [name of folder]
+    Example: 
+      ```
+        mkdir project1
+      ```
+
+b. Initialize Git by typing: 
+    ```
+    git init
+    ```
+
+    This creates an empty local version control system a  in that folder you just created. To double check, you'll see a .git folder in your directory after you initialize git. (type: "ls -a" in command prompt to check, or just go to the folder)
+    For every project, you'll need to create a dedicated local directory (folder) for your project, and initialize Git, so Git can track your project versions at the directory. 
+
+Some problems/troubleshootings: 
+    - ...
+
+c. Change branch name from *master to main (more about branching later): 
+    ``` 
+    git branch -m main
+    ``` 
+    Check branch name, you should see "main" as the branch name: 
+    ```
+    git branch 
+    ```
+    Why change branch to main? Because... read this article if you're curious
+     https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/ 
+
+d. Create a .gitignore and add it: 
+    ```
+    touch .gitignore
+    ``` 
+    You need to create this file to tell Git not to track some files you don't want it do track, for security reasons. 
+    Inside the file, pick 1 method: 
+        i. List what you want to ignore: 
+        For example, you want to ignore these files: a.exe, .git, .htaccess; open the .gitignore file, then write: 
+        ```
+        a.exe
+        .git
+        .htaccess
+        ```
+
+        ii. Ignore everything, and then unignore: 
+        Same example, open the .gitignore file, then write: 
+        ```
+        # ignore everything by using "*"
+        * 
+        
+        # unignore by using "!"
+        !.gitignore
+        !*.cpp
+        !*.h
+        ```
