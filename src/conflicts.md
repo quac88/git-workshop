@@ -169,5 +169,60 @@ git commit -m "docs: resolve pull conflict"
 git push
 ```
 
+# Using Cheery-Pick
 
+## Create a new directory
+```
+mkdir cherry-pick-demo
+cd cherry-pick-demo
+```
 
+## Create a base file and commit
+```
+echo "Initial commit" > example.txt
+git add example.txt
+git commit -m "docs: initial commit for cherrypick demo"
+```
+
+## Create two branches
+```
+git checkout -b quac/docs/cherry-pick-branch-1
+git checkout main
+git checkout -b quac/docs/cherry-pick-branch-2
+```
+
+## Add commits to both branches
+```
+git checkout quac/docs/cherry-pick-branch-1
+echo "Feature 1 content" >> example.txt
+git commit -am "docs: add to Feature 1"
+```
+```
+git checkout quac/docs/cherry-pick-branch-2
+echo "Feature 2 content" >> example.txt
+git commit -am "docs: add to Feature 2"
+```
+
+## Cherry-pick scenerio
+Imagine you're working on feature2 and realize that a particular commit from feature1 is needed in your branch. However, you don't want the entire feature1 branch merged into your feature2 branch.
+
+## Cherry-picking the commit
+```
+git checkout quac/docs/cherry-pick-branch-1
+git log
+```
+
+Copy the commit hash of the commit you want to cherry-pick. Then switch to the branch you want to cherry-pick into and run the following command:
+```
+git checkout quac/docs/cherry-pick-branch-2\
+git cherry-pick <commit-hash>
+```
+
+## Cherry-pick conflict
+If there is a conflict, resolve it as you would any other conflict. Then add and commit the changes:
+```
+git add example.txt
+git commit -m "docs: resolve cherry-pick conflict"
+```
+
+Once the cherry-pick is successful and conflicts (if any) are resolved, the changes from the specific commit in feature1 are now in your feature2 branch.
