@@ -274,6 +274,77 @@ git reset --mixed [commit-hash]
 git reset --hard [commit-hash]
 ```
 
+# Reverting a Commit
+
+## Make a new directory
+```bash
+mkdir revert-demo
+cd revert-demo
+```
+
+## Add a file and make intiial commits
+```bash
+echo "Initial content" > example.txt
+git add example.txt
+git commit -m "docs: initial commit"
+
+echo "Update 1" >> example.txt
+git commit -am "docs: Update 1"
+
+echo "Update 2" >> example.txt
+git commit -am "docs: Update 2"
+```
+
+## View the commit history
+```bash
+git log
+```
+
+## Revert a specific commit
+```bash
+git revert [commit-hash]
+```
+
+# Using Stash
+
+## Make a new directory
+```bash
+mkdir stash-demo
+cd stash-demo
+```
+
+## Add a file and commit
+```bash
+echo "Initial content" > example.txt
+git add example.txt
+git commit -m "docs: initial commit"
+```
+
+## Make a change to the file
+```bash
+echo "Update 1" >> example.txt
+```
+
+## Stash the changes
+```bash
+git stash
+```
+
+## Switch branches and apply stash to the new branch
+```bash
+git checkout -b quac/docs/stash-demo
+git stash apply
+```
+
+## Resolve the stash conflict
+If there are conflicts after applying the stash, resolve them as you would in a merge conflict. Edit the files to fix the conflicts, then add and commit:
+
+## Result
+The changes from the stash are now in the new branch. The stash can be dropped if no longer needed
+```bash
+git stash drop
+```
+
 
 
 
