@@ -32,6 +32,27 @@
   - Before pushing your changes to the remote repository using `git push`, ensure your local repository is up-to-date with the changes made by others.
   - This helps in avoiding conflicts and ensures that your changes are based on the latest code.
 
+### `git reset`
+- **Usage**:
+  - `git reset` is used to revert to a specific commit, affecting the commit history.
+  - Modes:
+    - `--soft`: Reverts the commit history but keeps changes staged.
+    - `--mixed` (default): Resets the staging area but keeps the working directory unchanged.
+    - `--hard`: Resets both the staging area and working directory, discarding all changes since the specified commit.
+  - Example:
+    ```bash
+    git reset --hard [commit-hash]
+    ```
+
+### `git revert`
+- **Usage**:
+  - `git revert` creates a new commit that undoes the changes made in a specified commit.
+  - It's a safer option for shared repositories as it doesn't rewrite commit history.
+  - Example:
+    ```bash
+    git revert [commit-hash]
+    ```
+
 ## Common Scenarios
 
 ### Parallel Edits to the Same Lines
