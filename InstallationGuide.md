@@ -65,47 +65,47 @@ https://github.com/quac88/git-workshop/blob/main/docs/contributing.md
 
 ## PART I: HOW TO SET UP A LOCAL REPOSITORY (LAPTOP/PC) 
 
-### Steps:
+ Steps:
 
 ### 1. Create a directory (folder) on your computer, where you would like all your project files to be. 
 
 In Command Prompt: 
-    ```
-    mkdir [name of folder] 
-    ```
+```
+mkdir [name of folder] 
+```
 
- Example: 
-    ```
-    mkdir project1 
-    ```
+Example:
+```
+mkdir project1 
+```
 
 ### 2. Initialize Git by typing: 
-
-    ```
-    git init
-    ```
+```
+git init
+```
  This creates an empty local version control system a  in that folder you just created. To double check, you'll see a .git folder in your directory after you initialized git. (type: "ls -a" in command prompt to check, or just go to the folder). 
 
  For every project, you'll need to create a dedicated local directory (folder) for your project, and initialize Git, so Git can track your project versions at the directory. 
 
 ### 3. Change branch name from *master to main (more about branching later): 
-    ```
-    git branch -m main
-    ```
+```
+git branch -m main
+```
     
- Check branch name, you should see "main" as the branch name: 
-    ``` 
-    git branch 
-    ```
+Check branch name, you should see "main" as the branch name: 
+
+``` 
+git branch 
+```
 
  #### Why change branch to main? 
  Because... read this article if you're curious: 
  https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/ 
 
 ### 4. Create a .gitignore: 
-    ``` 
-    touch .gitignore 
-    ``` 
+``` 
+touch .gitignore 
+``` 
 
  You need to create this file to tell Git not to track some files you don't want to track, for security reasons. This step is VERY IMPORTANT, because if you accidentally forget to ignore a file (for example, a file that contains user passwords) and let it to be in a repository, it's there forever! 
 
@@ -138,99 +138,98 @@ In Command Prompt:
 
 ### 5. Add a file before committing
  You need to 'git add' files to your version control before you can commit them. We can add the .gitignore file we just created: 
-    ```
-    git add .gitignore
-    ```
+```
+git add .gitignore
+```
 
- You can add multiple files, such as: 
-    ```
-    git add .gitignore main.cpp function.cpp 
-    ``` 
+You can add multiple files, such as: 
+```
+git add .gitignore main.cpp function.cpp 
+``` 
 
 ### 6. Check file status: 
-    ``` 
-    git status 
-    ``` 
+``` 
+git status 
+``` 
 
 ### 7. Commit files: 
-    ```
-    git commit -m "comment" 
-    ``` 
+```
+git commit -m "comment" 
+``` 
 
  Commit locks in the changes you made. Please please KNOW BEST PRACTICES for committing changes. You should commit small, often, and smart. You should write detailed/reasonable comments, please remember that your teammates and even you may want to go back and understand what you did as well. 
 
  You can double check by entering: 
-
- ```
- git status
- ```
+```
+git status
+```
 
  or: 
 
- ```
- git ls-files
- ```
+```
+git ls-files
+```
 
 Same process if you would like to create a README.md file or any files. 
 
-### Congratulations! You have set up your local repository :D 
+**Congratulations!** You have set up your local repository :D 
 
 
 ## PART II: HOW TO PULL REMOTE REPOSITORY (GITHUB) TO YOUR LOCAL REPOSITORY (DIRECTORY IN YOUR PC) 
 
  ### In your local repository, to add the remote repository to your local repository, enter: 
-    ``` 
-    git remote add origin [your SSH key from your "Quick setup - ...", which is the Github repository page]
-    ``` 
+``` 
+git remote add origin [your SSH key from your "Quick setup - ...", which is the Github repository page]
+``` 
 
  Example: 
-    ```
-    git remote add origin git@github.com:ak-iqmulus/test.git
-    ``` 
+```
+git remote add origin git@github.com:ak-iqmulus/test.git
+``` 
  
  Now you can pull it to your local directory/repository: 
-    ```
-    git pull origin main 
-    ```
+```
+git pull origin main 
+```
 
 ## PART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE  
  BEFORE YOU PUSH, please check your branch name first, make sure you push to the correct branch. 
-    ``` 
-    git branch 
-    ``` 
+``` 
+git branch 
+``` 
 
  Change *master branch name to main if necessary: 
-    ```
-    git branch -M main 
-    ``` 
+```
+git branch -M main 
+``` 
  
  Now you can push your files to the main branch: 
-    ```
-    git push -u origin main 
-    ``` 
+```
+git push -u origin main 
+``` 
 
  This means you push your committed work from 'origin', which is your local repository, to the main branch of the remote repository. You know it works when you see your added/updated work/files in your Github repository. 
 
  HOWEVER, it is best practice to create your own branch to push to, then, when your team is happy with your work, you merge it with the development branch, then finally, you can merge it with the main branch (please see Best Practices Guide, i.e. contributing.md doc) 
 
  To create a branch, following the angular-style format: 
-    ```
-    your-name/type-of-commit/few-words-about-what-you-did 
-    ``` 
+```
+your-name/type-of-commit/few-words-about-what-you-did 
+``` 
  
  Example: 
-    ```
-    git checkout -b quac/docs/installation-guide 
-    ``` 
+```
+git checkout -b quac/docs/installation-guide 
+``` 
 
  To check branches, you can even see which branch you're at: 
-    ```
-    git branch 
-    ``` 
+```
+git branch 
+``` 
 
  To change to a different branch, for example, you want to go to the development branch: 
-    ```
-    git checkout development 
-    ``` 
+```
+git checkout development 
+``` 
 
  For more information: https://github.com/quac88/NitDestroyer/blob/main/docs/contributing.md 
