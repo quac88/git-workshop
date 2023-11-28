@@ -6,9 +6,9 @@
 5. Getting Started and Basic Commands 
 
 # Before We Start 
-WINDOWS USERS: Please consider installing Linux based Command Prompt such as powershell, MinGW, or Cygwin. It is highly highly recommended. 
+- WINDOWS USERS: Please consider installing Linux based Command Prompt such as powershell, MinGW, or Cygwin. It is highly highly recommended. 
 
-You'll need to use the command prompt for almost all of these procedures (<link to command prompt tutorial and cheat sheet>). You should get used to it because you'll see/use it sooner or later. 
+- You'll need to use the command prompt for almost all of these procedures (<link to command prompt tutorial and cheat sheet>). You should get used to it because you'll see/use it sooner or later. 
 
 # 2. Git 
 Git is a version control software. There are other version control systems, we use Git in this tutorial. 
@@ -75,7 +75,6 @@ In Command Prompt:
     ```
 
  Example: 
-
     ```
     mkdir project1 
     ```
@@ -90,13 +89,11 @@ In Command Prompt:
  For every project, you'll need to create a dedicated local directory (folder) for your project, and initialize Git, so Git can track your project versions at the directory. 
 
 ### 3. Change branch name from *master to main (more about branching later): 
-
     ```
     git branch -m main
     ```
     
  Check branch name, you should see "main" as the branch name: 
-
     ``` 
     git branch 
     ```
@@ -106,7 +103,6 @@ In Command Prompt:
  https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/ 
 
 ### 4. Create a .gitignore: 
-
     ``` 
     touch .gitignore 
     ``` 
@@ -142,25 +138,21 @@ In Command Prompt:
 
 ### 5. Add a file before committing
  You need to 'git add' files to your version control before you can commit them. We can add the .gitignore file we just created: 
-
     ```
     git add .gitignore
     ```
 
  You can add multiple files, such as: 
-
     ```
     git add .gitignore main.cpp function.cpp 
     ``` 
 
 ### 6. Check file status: 
-
     ``` 
     git status 
     ``` 
 
 ### 7. Commit files: 
-
     ```
     git commit -m "comment" 
     ``` 
@@ -187,38 +179,32 @@ Same process if you would like to create a README.md file or any files.
 ## PART II: HOW TO PULL REMOTE REPOSITORY (GITHUB) TO YOUR LOCAL REPOSITORY (DIRECTORY IN YOUR PC) 
 
  ### In your local repository, to add the remote repository to your local repository, enter: 
-
     ``` 
     git remote add origin [your SSH key from your "Quick setup - ...", which is the Github repository page]
     ``` 
 
  Example: 
-
     ```
     git remote add origin git@github.com:ak-iqmulus/test.git
     ``` 
  
  Now you can pull it to your local directory/repository: 
-
     ```
     git pull origin main 
     ```
 
 ## PART III: HOW TO PUSH EXISTING LOCAL REPOSITORY FROM THE COMMAND LINE  
  BEFORE YOU PUSH, please check your branch name first, make sure you push to the correct branch. 
-
     ``` 
     git branch 
     ``` 
 
  Change *master branch name to main if necessary: 
-
     ```
     git branch -M main 
     ``` 
  
  Now you can push your files to the main branch: 
- 
     ```
     git push -u origin main 
     ``` 
@@ -228,25 +214,21 @@ Same process if you would like to create a README.md file or any files.
  HOWEVER, it is best practice to create your own branch to push to, then, when your team is happy with your work, you merge it with the development branch, then finally, you can merge it with the main branch (please see Best Practices Guide, i.e. contributing.md doc) 
 
  To create a branch, following the angular-style format: 
-
     ```
     your-name/type-of-commit/few-words-about-what-you-did 
     ``` 
  
  Example: 
-
     ```
     git checkout -b quac/docs/installation-guide 
     ``` 
 
  To check branches, you can even see which branch you're at: 
-
     ```
     git branch 
     ``` 
 
  To change to a different branch, for example, you want to go to the development branch: 
-
     ```
     git checkout development 
     ``` 
