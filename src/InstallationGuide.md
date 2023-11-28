@@ -11,7 +11,8 @@
 - You'll need to use the command prompt for almost all of these procedures (<link to command prompt tutorial and cheat sheet>). You should get used to it because you'll see/use it sooner or later. 
 
 # 1. Command Prompt Basics
-https://github.com/quac88/git-workshop/blob/main/docs/commandPrompt.md 
+[commandPrompt.md](src/commandPrompt.md)
+
 # 2. Git 
 Git is a version control software. There are other version control systems, we use Git in this tutorial. 
 
@@ -58,9 +59,9 @@ Github repository is a remote repository, this is for when you want to start a p
 
 # 4. Read the Best Practices Guide 
 
-[commits.md](https://github.com/quac88/git-workshop/blob/main/docs/commits.md)
+[commits.md](docs/commits.md)
 
-[contributing.md](https://github.com/quac88/git-workshop/blob/main/docs/contributing.md)
+[contributing.md](docs/contributing.md)
 
 # 5. Getting Started and Basic Commands
 (You must have Git installed before you can follow these steps.) 
@@ -246,4 +247,5 @@ git push origin main
 ```
 This means, you have to be in the main branch to merge development branch to main. 
 
- For more information: [contributing.md](https://github.com/quac88/git-workshop/blob/main/docs/contributing.md) 
+ For more information: [contributing.md](docs/contributing.md) 
+
