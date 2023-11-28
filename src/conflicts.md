@@ -226,3 +226,4 @@ git commit -m "docs: resolve cherry-pick conflict"
 ```
 
 Once the cherry-pick is successful and conflicts (if any) are resolved, the changes from the specific commit in feature1 are now in your feature2 branch.
+
