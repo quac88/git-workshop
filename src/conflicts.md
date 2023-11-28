@@ -133,6 +133,41 @@ git push
 
 # Pull Conflict
 
+## Make and push changes from the local repository
+```
+echo "pull conflict example" > example.txt
+git add example.txt
+git commit -m "docs: pull conflict example"
+git push
+```
+
+## Make and push changes from the remote repository
+You can do this in the web interface
+
+## Makke more changes locally and push
+```
+echo "yet another pull conflict example" > example.txt
+git add example.txt
+git commit -m "docs: another pull conflict example"
+git push
+```
+
+## Attempt to pull the changes from the remote repository
+```
+git pull origin main
+```
+
+## Resolve the pull conflict
+
+1. Open example.txt in your text editor
+2. Edit the file to rexolve conflicts
+3. Add and commit the changes
+
+```
+git add example.txt
+git commit -m "docs: resolve pull conflict"
+git push
+```
 
 
 
