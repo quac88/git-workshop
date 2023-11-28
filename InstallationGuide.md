@@ -11,7 +11,7 @@
 - You'll need to use the command prompt for almost all of these procedures (<link to command prompt tutorial and cheat sheet>). You should get used to it because you'll see/use it sooner or later. 
 
 # 1. Command Prompt Basics
-
+https://github.com/quac88/git-workshop/blob/main/docs/commandPrompt.md 
 # 2. Git 
 Git is a version control software. There are other version control systems, we use Git in this tutorial. 
 
@@ -224,7 +224,7 @@ your-name/type-of-commit/few-words-about-what-you-did
 git checkout -b quac/docs/installation-guide 
 ``` 
 
- To check branches, you can even see which branch you're at: 
+To check branches, you can even see which branch you're at: 
 ```
 git branch 
 ``` 
@@ -234,4 +234,16 @@ git branch
 git checkout development 
 ``` 
 
- For more information: https://github.com/quac88/NitDestroyer/blob/main/docs/contributing.md 
+To merge with a branch, for example, you are in development branch, and you would like to merge your branch (ie: quac/docs/installtion-guide) to the main branch: 
+```
+git merge quac/docs/installtion-guide 
+``` 
+Note the location of the branch you need to be in. Let's practice one more time, let's try to merge development branch to the main branch:
+```
+git checkout main
+git merge development 
+git push origin main
+```
+This means, you have to be in the main branch to merge development branch to main. 
+
+ For more information: [contributing.md](https://github.com/quac88/git-workshop/blob/main/docs/contributing.md) 
