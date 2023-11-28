@@ -53,6 +53,27 @@
     git revert [commit-hash]
     ```
 
+### `git rebase`
+- **Usage**:
+  - `git rebase` is used to apply changes from one branch onto another, creating a linear history.
+  - It's useful for integrating the latest changes from the base branch into a feature branch.
+  - Note that rebase rewrites history, which can be problematic for shared branches.
+  - Example:
+    ```bash
+    git rebase [branch-name]
+    ```
+
+### `git stash`
+- **Usage**:
+  - `git stash` temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+  - It's useful for temporarily hiding changes that are not ready to be committed.
+  - You can apply the stashed changes to the same branch or a different branch.
+  - Commands:
+    - Stash changes: `git stash`
+    - List stashes: `git stash list`
+    - Apply the latest stash: `git stash apply`
+    - Apply a specific stash: `git stash apply stash@{n}` (where `n` is the stash index)
+
 ## Common Scenarios
 
 ### Parallel Edits to the Same Lines
