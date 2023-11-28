@@ -81,3 +81,5 @@
   - Developer A modifies a file and pushes changes.
   - Developer B also modifies the same file without pulling the latest changes.
   - When Developer B tries to push, Git detects conflicting changes on the same lines.
+
+
