@@ -11,7 +11,8 @@
 - You'll need to use the command prompt for almost all of these procedures (<link to command prompt tutorial and cheat sheet>). You should get used to it because you'll see/use it sooner or later. 
 
 # 1. Command Prompt Basics
-[commandPrompt.md](commandPrompt.md)
+[commandPrompt.md](src/commandPrompt.md)
+
 # 2. Git 
 Git is a version control software. There are other version control systems, we use Git in this tutorial. 
 
@@ -247,3 +248,4 @@ git push origin main
 This means, you have to be in the main branch to merge development branch to main. 
 
  For more information: [contributing.md](docs/contributing.md) 
+

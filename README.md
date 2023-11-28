@@ -13,29 +13,30 @@ Create a workshop for ACC CS Club members to become masters of git and github.
 See [contributing.md](docs/contributing.md) and [commits.md](docs/commits.md)
 
 # ROADMAP
-- [] Create guide for getting started with git
-  - [] Create a github account
-  - [] Install git (MacOS, Windows, Linux)
-  - [] Basic Commands - `git init`, `git clone`, `git add`, `git commit`, `git push`, `git pull`, etc.
-- [] Create a guide for best practices in group settings
-  - [] Branching
-  - [] Merging
-  - [] Pull Requests
-  - [] Code Reviews
-  - [] Issue Tracking
-  - [] Project Management
-  - [] Symantic Versioning/commits
-  - [] Setting Permissions/Security
-- [] Create artificial conflict scenerios
-    - [] Merge conflicts
-    - [] Rebase conflicts
-    - [] Push conflicts
-    - [] Pull conflicts
-    - [] Misc. conflicts
-- [] Cover advanced git features
-  - [] cherry-pick
-  - [] etc
-- [] Play through and understand [git tutorial game](https://learngitbranching.js.org/)
+- [x] Create guide for getting started with git
+  - [x] Create a github account
+  - [x] Install git (MacOS, Windows, Linux)
+  - [x] Basic Commands - `git init`, `git clone`, `git add`, `git commit`, `git push`, `git pull`, etc.
+- [ ] Create a guide for best practices in group settings
+  - [x] Branching
+  - [x] Merging
+  - [x] Pull Requests
+  - [x] Code Reviews
+  - [ ] Issue Tracking
+  - [x] Project Management
+  - [x] Symantic Versioning/commits
+  - [x] Setting Permissions/Security
+  - [ ] Go over version control (semantic release)
+- [ ] Create artificial conflict scenerios
+    - [ ] Merge conflicts
+    - [ ] Rebase conflicts
+    - [ ] Push conflicts
+    - [ ] Pull conflicts
+    - [ ] Misc. conflicts
+- [ ] Cover advanced git features
+  - [ ] cherry-pick
+  - [ ] etc
+- [x] Play through and understand [git tutorial game](https://learngitbranching.js.org/)
 
 
 
