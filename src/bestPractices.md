@@ -14,9 +14,7 @@ Before anything is merged into main, it should be reviewed and tested by at leas
 
 Protect the main branch to avoid inaproprate changes.
 
-![protect_main_branch_1](/images/navigate_protections.png)
-
-![protect_main_branch_2](/images/navigate_apropriate_protections.png)
+![protect_main_branch_1](/images/branch-protections.png)
 
 ## Pipeline
 
