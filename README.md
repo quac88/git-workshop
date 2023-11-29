@@ -17,7 +17,7 @@ See [contributing.md](docs/contributing.md) and [commits.md](docs/commits.md)
   - [x] Create a github account
   - [x] Install git (MacOS, Windows, Linux)
   - [x] Basic Commands - `git init`, `git clone`, `git add`, `git commit`, `git push`, `git pull`, etc.
-- [ ] Create a guide for best practices in group settings
+- [x] Create a guide for best practices in group settings
   - [x] Branching
   - [x] Merging
   - [x] Pull Requests
@@ -27,15 +27,15 @@ See [contributing.md](docs/contributing.md) and [commits.md](docs/commits.md)
   - [x] Symantic Versioning/commits
   - [x] Setting Permissions/Security
   - [ ] Go over version control (semantic release)
-- [ ] Create artificial conflict scenerios
-    - [ ] Merge conflicts
-    - [ ] Rebase conflicts
-    - [ ] Push conflicts
-    - [ ] Pull conflicts
-    - [ ] Misc. conflicts
-- [ ] Cover advanced git features
-  - [ ] cherry-pick
-  - [ ] etc
+- [x] Create artificial conflict scenerios
+    - [x] Merge conflicts
+    - [x] Rebase conflicts
+    - [x] Push conflicts
+    - [x] Pull conflicts
+    - [x] Misc. conflicts
+- [x] Cover advanced git features
+  - [x] cherry-pick
+  - [x] etc
 - [x] Play through and understand [git tutorial game](https://learngitbranching.js.org/)
 
 
